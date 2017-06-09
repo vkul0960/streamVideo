@@ -6,4 +6,5 @@ server:
     - type: http
       port: 8081
 
-cdnUrl: ${CDN_URL:-http://d2fhamibhu70ff.cloudfront.net/}
+#cdnUrl: ${CDN_URL:-http://d2fhamibhu70ff.cloudfront.net/}
+cdnUrl: ${CDN_URL:-https://s3.amazonaws.com/chinmaya-pilot-videos/}

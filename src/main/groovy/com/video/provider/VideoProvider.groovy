@@ -20,6 +20,15 @@ class VideoProvider {
         DateTime dateTime = new DateTime(DateTimeZone.forID("America/Chicago"))
         DateTimeFormatter formatter = DateTimeFormat.forPattern("yyyy-MM-dd")
         String bucket= formatter.print(dateTime)
-        url + bucket + "/gita.mp4"
+//      url + bucket + "/gita.mp4"
+        url + bucket + "/story_html5.html"
+    }
+
+    String getPreviousUrl(int day) {
+        DateTime dateTime = new DateTime(DateTimeZone.forID("America/Chicago"))
+        DateTime previousDateTime = dateTime.minusDays(day)
+        DateTimeFormatter formatter = DateTimeFormat.forPattern("yyyy-MM-dd")
+        String bucket = formatter.print(previousDateTime)
+        url + bucket + "/story_html5.html"
     }
 }
